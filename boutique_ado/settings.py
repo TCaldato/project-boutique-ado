@@ -26,7 +26,7 @@ SECRET_KEY = "django-insecure-s%$xjd4_^)x$qdhwur$voxnrgmdzx*yh0^457h$(*rv_=&t_*)
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["8000-tcaldato-project-boutiqu-n1kxutvxkl.us2.codeanyapp.com", "127.0.0.1"]
+ALLOWED_HOSTS = ["8000-tcaldato-project-boutiqu-n1kxutvxkl.us2.codeanyapp.com", "localhost", "127.0.0.1"]
 
 
 # Application definition
@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     "allauth",
     "allauth.account",
     "allauth.socialaccount",
+    "home",
 ]
 
 MIDDLEWARE = [
@@ -60,7 +61,10 @@ ROOT_URLCONF = "boutique_ado.urls"
 TEMPLATES = [
     {
         "BACKEND": "django.template.backends.django.DjangoTemplates",
-        "DIRS": [],
+        "DIRS": [
+            os.path.join(BASE_DIR, 'templates'),
+            os.path.join(BASE_DIR, 'templates', 'allauth'),
+        ],
         "APP_DIRS": True,
         "OPTIONS": {
             "context_processors": [
