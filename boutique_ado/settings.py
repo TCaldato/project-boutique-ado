@@ -28,7 +28,7 @@ SECRET_KEY = "django-insecure-s%$xjd4_^)x$qdhwur$voxnrgmdzx*yh0^457h$(*rv_=&t_*)
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["8000-tcaldato-project-boutiqu-n1kxutvxkl.us2.codeanyapp.com", "localhost", "127.0.0.1"]
+ALLOWED_HOSTS = ["8000-tcaldato-project-boutiqu-dd54n97719.us1.codeanyapp.com", "localhost", "127.0.0.1"]
 
 
 # Application definition
