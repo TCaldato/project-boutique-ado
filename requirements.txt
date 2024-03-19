@@ -2,7 +2,6 @@ asgiref==3.7.2
 chardet==3.0.4
 django-crispy-forms==1.8.1
 idna==2.8
-backports.zoneinfo==0.2.1;python_version<"3.9"
 Django==5.0.1
 django-allauth==0.59.0
 oauthlib==3.2.0
